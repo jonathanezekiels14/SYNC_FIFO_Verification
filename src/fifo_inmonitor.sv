@@ -2,7 +2,7 @@ class fifo_inmonitor extends uvm_monitor;
 	`uvm_component_utils(fifo_inmonitor)
 
 	uvm_analysis_port #(fifo_transaction) inp_mon_port;
-	virtual fifo_interface vif;
+	virtual fifo_interface.MON vif;
 	fifo_config cfg;
 
 	function new(string name = "fifo_inmonitor",uvm_component parent);
@@ -31,7 +31,7 @@ class fifo_inmonitor extends uvm_monitor;
 				tx.wr_en = vif.mon_cb.wr_en;
 				tx.data_in = vif.mon_cb.data_in;
 				tx.full = vif.mon_cb.full;
-				`uvm_info(get_full_name(),{"WRITE TX Captured:\n", tx.convert2string()},"UVM_HIGH");
+				`uvm_info(get_full_name(),{"WRITE TX Captured:\n", tx.convert2string()},UVM_MEDIUM);
 				inp_mon_port.write(tx);
 			end
 		end

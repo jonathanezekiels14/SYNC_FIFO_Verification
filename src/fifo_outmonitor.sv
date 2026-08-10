@@ -2,7 +2,7 @@ class fifo_outmonitor extends uvm_monitor;
 	`uvm_component_utils(fifo_outmonitor)
 
 	uvm_analysis_port #(fifo_transaction) out_mon_port;
-	virtual fifo_interface vif;
+	virtual fifo_interface.MON vif;
 	fifo_config cfg;
 
 	function new(string name = "fifo_outmonitor",uvm_component parent);
@@ -41,7 +41,7 @@ class fifo_outmonitor extends uvm_monitor;
 			begin
 				@(vif.mon_cb);
 				data_tx.data_out = vif.mon_cb.data_out;
-				`uvm_info(get_full_name(),{"READ TX Captured:\n",data_tx.convert2string()},UVM_HIGH);
+				`uvm_info(get_full_name(),{"READ TX Captured:\n",data_tx.convert2string()},UVM_MEDIUM);
 				out_mon_port.write(data_tx);
 			end
 		join_none

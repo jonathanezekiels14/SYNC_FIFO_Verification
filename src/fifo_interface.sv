@@ -10,12 +10,13 @@ interface fifo_interface(input logic clk);
 
 	// Clocking blocks
 	clocking drv_cb @(posedge clk);
-		default output #1ns;
+		default input #1ns output #1ns;
 		output wr_cs,rd_cs,wr_en,rd_en,data_in;
+		input rst;
 	endclocking
 
 	clocking mon_cb @(posedge clk);
-		default input #1step;
+		default input #1ns;
 		input wr_cs,rd_cs,wr_en,rd_en,data_in,data_out,full,empty;
 	endclocking
 

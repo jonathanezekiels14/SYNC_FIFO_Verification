@@ -7,7 +7,7 @@ class fifo_sanity_sequence extends fifo_base_sequence;
 
 	virtual task body();
 		fifo_transaction tx;
-		repeat (2) begin
+		repeat (20) begin
 			tx = fifo_transaction::type_id::create("tx");
 			start_item(tx);
 			assert(tx.randomize() with { 
@@ -19,12 +19,24 @@ class fifo_sanity_sequence extends fifo_base_sequence;
 			finish_item(tx);
 		end
 
-		repeat (2) begin
+		repeat (10) begin
 			tx = fifo_transaction::type_id::create("tx");
 			start_item(tx);
 			assert(tx.randomize() with { 
 				wr_cs == 0;
 				wr_en == 0;
+				rd_cs == 1;
+				rd_en == 1;
+			})
+			finish_item(tx);
+		end
+
+		repeat (5) begin
+			tx=fifo_transaction::type_id::create("tx");
+			start_item(tx);
+			assert(tx.randomize() with{
+				wr_cs == 1;
+				wr_en == 1;
 				rd_cs == 1;
 				rd_en == 1;
 			})

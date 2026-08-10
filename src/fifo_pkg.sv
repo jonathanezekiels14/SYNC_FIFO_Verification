@@ -7,8 +7,9 @@ package fifo_pkg;
 	`include "fifo_config.sv"
 
 	`include "fifo_base_sequence.sv"
-	`include "fifo_sanity_sequence.sv"
-	
+	`include "fifo_sanity_sequence.sv"	
+	`include "fifo_corner_sequence.sv"
+
 	`include "fifo_sequencer.sv"
 
 	`include "fifo_driver.sv"
@@ -24,6 +25,7 @@ package fifo_pkg;
 
 	`include "fifo_base_test.sv"
 	`include "fifo_sanity_test.sv"
+	`include "fifo_corner_test.sv"
 
 endpackage
 

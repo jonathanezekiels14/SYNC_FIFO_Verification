@@ -22,5 +22,11 @@ class fifo_transaction extends uvm_sequence_item;
 		super.new(name);
 	endfunction
 
+	virtual function string convert2string();
+		return $sformatf("WR_CS: %b | WR_EN: %b | RD_CS: %b | RD_EN: %b | D_IN: 'd%0d | D_OUT: 'd%0d | FULL: %b | EMPTY: %b", 
+			wr_cs, wr_en, rd_cs, rd_en, data_in, data_out, full, empty);
+	endfunction
+
+
 endclass
 

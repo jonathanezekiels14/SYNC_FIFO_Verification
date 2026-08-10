@@ -41,7 +41,7 @@ class fifo_driver extends uvm_driver #(fifo_transaction);
 
 			if(vif.rst == 1)
 				reset_pins();
-			`uvm_info("DRV",req.convert2string(),"UVM_MED");
+			`uvm_info("DRV",req.convert2string(),UVM_MEDIUM);
 			seq_item_port.item_done();
 		end
 	endtask
@@ -61,5 +61,9 @@ class fifo_driver extends uvm_driver #(fifo_transaction);
 		vif.drv_cb.wr_en <= tx.wr_en;
 		vif.drv_cb.rd_en <= tx.rd_en;
 		vif.drv_cb.data_in <= tx.data_in;
+		
+		@(vif.drv_cb);
+		vif.drv_cb.wr_en <= 1'b0;
+		vif.drv_cb.rd_en <= 1'b0;
 	endtask
 endclass

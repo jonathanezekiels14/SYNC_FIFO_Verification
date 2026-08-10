@@ -21,6 +21,7 @@ module top;
 		.rst(vif.rst),
 		.wr_cs(vif.wr_cs),
 		.rd_cs(vif.rd_cs),
+		.rd_en(vif.rd_en),
 		.wr_en(vif.wr_en),
 		.data_in(vif.data_in),
 		.data_out(vif.data_out),

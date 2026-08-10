@@ -41,6 +41,7 @@ class fifo_driver extends uvm_driver #(fifo_transaction);
 
 			if(vif.rst == 1)
 				reset_pins();
+			`uvm_info("DRV",req.convert2string(),"UVM_MED");
 			seq_item_port.item_done();
 		end
 	endtask

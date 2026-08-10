@@ -15,7 +15,8 @@ interface fifo_interface(input logic clk);
 	endclocking
 
 	clocking mon_cb @(posedge clk);
-		default input wr_cs,rd_cs,wr_en,rd_en,data_in,data_out,full,empty;
+		default input #1step;
+		input wr_cs,rd_cs,wr_en,rd_en,data_in,data_out,full,empty;
 	endclocking
 
 	// Modports

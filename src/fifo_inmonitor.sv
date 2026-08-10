@@ -31,7 +31,7 @@ class fifo_inmonitor extends uvm_monitor;
 				tx.wr_en = vif.mon_cb.wr_en;
 				tx.data_in = vif.mon_cb.data_in;
 				tx.full = vif.mon_cb.full;
-				`uvm_info(get_full_name(),{"WRITE TX Captured:\n" tx.convert2string()},"UVM_HIGH");
+				`uvm_info(get_full_name(),{"WRITE TX Captured:\n", tx.convert2string()},"UVM_HIGH");
 				inp_mon_port.write(tx);
 			end
 		end

@@ -27,7 +27,6 @@ class fifo_env extends uvm_env;
 
 		in_agent.inp_agent_ap.connect(scb.inp_fifo.analysis_export);
 		out_agent.out_agent_ap.connect(scb.out_fifo.analysis_export);
-		in_agent.inp_agent_ap.connect(sub.analysis_export);
 	endfunction
 endclass
 

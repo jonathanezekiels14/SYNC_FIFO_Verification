@@ -1,7 +1,7 @@
 `include "defines.svh"
 `include "fifo_interface.sv"
 `include "fifo_pkg.sv"
-
+`include "sync_fifo.v"
 module top;
 
 	import uvm_pkg::*;

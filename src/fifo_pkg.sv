@@ -9,6 +9,8 @@ package fifo_pkg;
 	`include "fifo_base_sequence.sv"
 	`include "fifo_sanity_sequence.sv"	
 	`include "fifo_corner_sequence.sv"
+	`include "fifo_error_sequence.sv"
+	`include "fifo_rand_sequence.sv"
 
 	`include "fifo_sequencer.sv"
 
@@ -27,6 +29,9 @@ package fifo_pkg;
 	`include "fifo_base_test.sv"
 	`include "fifo_sanity_test.sv"
 	`include "fifo_corner_test.sv"
+	`include "fifo_error_test.sv"
+	`include "fifo_rand_test.sv"
+	`include "fifo_regression_test.sv"
 
 endpackage
 

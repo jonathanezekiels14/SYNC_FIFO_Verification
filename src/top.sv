@@ -35,6 +35,8 @@ module top;
 		vif.wr_en = 0;
 		vif.rd_en = 0;
 		vif.data_in = 0;
+		vif.rst = 0;
+		@(posedge clk);
 		vif.rst = 1;
 		repeat (2) @(posedge clk);
 		vif.rst = 0;

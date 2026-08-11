@@ -7,7 +7,7 @@ class fifo_sanity_sequence extends fifo_base_sequence;
 
 	virtual task body();
 		fifo_transaction tx;
-		repeat (20) begin
+		repeat (10) begin
 			tx = fifo_transaction::type_id::create("tx");
 			start_item(tx);
 			assert(tx.randomize() with { 

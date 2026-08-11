@@ -1,0 +1,48 @@
+var g_data = {
+b6:[{dummy:0},
+{anchor:'cvg12',items:[{z:'  if (rst) begin',f:'sync_fifo.v',l:'58',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if (rst) begin',f:'sync_fifo.v',l:'58',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  end else if (wr_valid) begin',f:'sync_fifo.v',l:'60',h:'541',c:'g'}
+,{cr:'c',t:'A',z:'  if (rst) begin',f:'sync_fifo.v',l:'58',h:'543',c:'g'}
+]},
+{anchor:'cvg13',items:[{z:'  if (rst) begin',f:'sync_fifo.v',l:'67',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if (rst) begin',f:'sync_fifo.v',l:'67',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  end else if (rd_valid) begin',f:'sync_fifo.v',l:'69',h:'496',c:'g'}
+,{cr:'c',t:'A',z:'  if (rst) begin',f:'sync_fifo.v',l:'67',h:'499',c:'g'}
+]},
+{anchor:'cvg14',items:[{z:'  if (rst) begin',f:'sync_fifo.v',l:'76',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if (rst) begin',f:'sync_fifo.v',l:'76',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  end else if (rd_valid) begin',f:'sync_fifo.v',l:'78',h:'496',c:'g'}
+,{cr:'c',t:'A',z:'  if (rst) begin',f:'sync_fifo.v',l:'76',h:'504',c:'g'}
+]},
+{anchor:'cvg15',items:[{z:'  if (rst) begin',f:'sync_fifo.v',l:'85',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if (rst) begin',f:'sync_fifo.v',l:'85',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  end else if (rd_valid && !wr_valid) begin',f:'sync_fifo.v',l:'88',h:'492',c:'g'}
+,{cr:'c',t:'T',z:'  end else if (wr_valid && !rd_valid) begin',f:'sync_fifo.v',l:'91',h:'537',c:'g'}
+,{cr:'c',t:'A',z:'  if (rst) begin',f:'sync_fifo.v',l:'85',h:'1039',c:'g'}
+]}],
+b11:[{dummy:0},
+{anchor:'cvg12',items:[{z:'  if (rst) begin',f:'sync_fifo.v',l:'58',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if (rst) begin',f:'sync_fifo.v',l:'58',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  end else if (wr_valid) begin',f:'sync_fifo.v',l:'60',h:'541',c:'g'}
+,{cr:'c',t:'A',z:'  if (rst) begin',f:'sync_fifo.v',l:'58',h:'543',c:'g'}
+]},
+{anchor:'cvg13',items:[{z:'  if (rst) begin',f:'sync_fifo.v',l:'67',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if (rst) begin',f:'sync_fifo.v',l:'67',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  end else if (rd_valid) begin',f:'sync_fifo.v',l:'69',h:'496',c:'g'}
+,{cr:'c',t:'A',z:'  if (rst) begin',f:'sync_fifo.v',l:'67',h:'499',c:'g'}
+]},
+{anchor:'cvg14',items:[{z:'  if (rst) begin',f:'sync_fifo.v',l:'76',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if (rst) begin',f:'sync_fifo.v',l:'76',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  end else if (rd_valid) begin',f:'sync_fifo.v',l:'78',h:'496',c:'g'}
+,{cr:'c',t:'A',z:'  if (rst) begin',f:'sync_fifo.v',l:'76',h:'504',c:'g'}
+]},
+{anchor:'cvg15',items:[{z:'  if (rst) begin',f:'sync_fifo.v',l:'85',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if (rst) begin',f:'sync_fifo.v',l:'85',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  end else if (rd_valid && !wr_valid) begin',f:'sync_fifo.v',l:'88',h:'492',c:'g'}
+,{cr:'c',t:'T',z:'  end else if (wr_valid && !rd_valid) begin',f:'sync_fifo.v',l:'91',h:'537',c:'g'}
+,{cr:'c',t:'A',z:'  if (rst) begin',f:'sync_fifo.v',l:'85',h:'1039',c:'g'}
+]}],
+dummyEnd:0
+};
+processBranchesData(g_data);

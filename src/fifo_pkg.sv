@@ -20,6 +20,7 @@ package fifo_pkg;
 	`include "fifo_out_agent.sv"
 
 	`include "fifo_scoreboard.sv"
+	`include "fifo_subscriber.sv"
 
 	`include "fifo_environment.sv"
 

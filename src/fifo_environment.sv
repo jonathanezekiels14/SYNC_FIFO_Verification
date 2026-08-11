@@ -4,6 +4,7 @@ class fifo_env extends uvm_env;
 	fifo_inp_agent in_agent;
 	fifo_out_agent out_agent;
 	fifo_scoreboard scb;
+	fifo_subscriber sub;
 	fifo_config cfg;
 
 	function new(string name = "fifo_env", uvm_component parent);
@@ -18,6 +19,7 @@ class fifo_env extends uvm_env;
 		in_agent = fifo_inp_agent::type_id::create("in_agent",this);
 		out_agent = fifo_out_agent::type_id::create("out_agent",this);
 		scb = fifo_scoreboard::type_id::create("scb",this);
+		sub = fifo_subscriber::type_id::create("sub",this);
 	endfunction
 
 	function void connect_phase(uvm_phase phase);
@@ -25,6 +27,7 @@ class fifo_env extends uvm_env;
 
 		in_agent.inp_agent_ap.connect(scb.inp_fifo.analysis_export);
 		out_agent.out_agent_ap.connect(scb.out_fifo.analysis_export);
+		in_agent.inp_agent_ap.connect(sub.analysis_export);
 	endfunction
 endclass
 

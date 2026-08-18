@@ -2,6 +2,7 @@
 `include "fifo_interface.sv"
 `include "fifo_pkg.sv"
 `include "sync_fifo.v"
+`include "fifo_assertions.sv"
 module top;
 
 	import uvm_pkg::*;
@@ -24,6 +25,18 @@ module top;
 		.rd_en(vif.rd_en),
 		.wr_en(vif.wr_en),
 		.data_in(vif.data_in),
+		.data_out(vif.data_out),
+		.empty(vif.empty),
+		.full(vif.full)
+	);
+	bind dut fifo_assertion assertion_unit(
+		.clk(clk),
+		.rst(rst),
+		.wr_cs(vif.wr_cs),
+		.rd_cs(vif.rd_cs),
+		.data_in(vif.data_in),
+		.rd_en(vif.rd_en),
+		.wr_en(vif.wr_en),
 		.data_out(vif.data_out),
 		.empty(vif.empty),
 		.full(vif.full)

@@ -44,14 +44,14 @@ b39:[{dummy:0},
 ,{cr:'c',t:'A',z:'  if (rst) begin',f:'sync_fifo.v',l:'85',h:'833',c:'g'}
 ]}],
 b5:[{dummy:0},
-{anchor:'cvg10',items:[{z:'		`uvm_info(&#34;TB_TOP&#34;, &#34;Initial Reset Released.&#34;, UVM_LOW)',f:'top.sv',l:'43',c:'Y',p:'50.00'}
-,{cr:'c',t:'I',z:'		`uvm_info(&#34;TB_TOP&#34;, &#34;Initial Reset Released.&#34;, UVM_LOW)',f:'top.sv',l:'43',h:'1',c:'g'}
-,{cr:'m',t:'A',z:'		`uvm_info(&#34;TB_TOP&#34;, &#34;Initial Reset Released.&#34;, UVM_LOW)',f:'top.sv',l:'43',h:'0',c:'r'}
+{anchor:'cvg10',items:[{z:'	);',f:'top.sv',l:'43',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'	);',f:'top.sv',l:'43',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'	);',f:'top.sv',l:'43',h:'0',c:'r'}
 ]}],
 b9:[{dummy:0},
-{anchor:'cvg10',items:[{z:'		`uvm_info(&#34;TB_TOP&#34;, &#34;Initial Reset Released.&#34;, UVM_LOW)',f:'top.sv',l:'43',c:'Y',p:'50.00'}
-,{cr:'c',t:'I',z:'		`uvm_info(&#34;TB_TOP&#34;, &#34;Initial Reset Released.&#34;, UVM_LOW)',f:'top.sv',l:'43',h:'1',c:'g'}
-,{cr:'m',t:'A',z:'		`uvm_info(&#34;TB_TOP&#34;, &#34;Initial Reset Released.&#34;, UVM_LOW)',f:'top.sv',l:'43',h:'0',c:'r'}
+{anchor:'cvg10',items:[{z:'	);',f:'top.sv',l:'43',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'	);',f:'top.sv',l:'43',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'	);',f:'top.sv',l:'43',h:'0',c:'r'}
 ]}],
 b841:[{dummy:0},
 {anchor:'cvg842',items:[{z:'	`uvm_object_utils_begin(fifo_transaction)',f:'fifo_transaction.sv',l:'10',c:'R',p:'0.00'}

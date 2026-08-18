@@ -1,6 +1,6 @@
 # vsim -vopt work.top -voptargs="+acc=npr" -assertdebug -l fifo.log -c -do "run -all; exit" "+UVM_TESTNAME=fifo_regression_test" "+UVM_VERBOSITY=UVM_MEDIUM" 
-# Start time: 11:02:13 on Aug 18,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 11:58:24 on Aug 18,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -3113,5 +3113,5 @@
 # [uvm_test_top.env.out_agent.mon]   366
 # ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 21305 ns  Iteration: 53  Instance: /top
-# End time: 11:02:15 on Aug 18,2026, Elapsed time: 0:00:02
+# End time: 11:58:26 on Aug 18,2026, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
